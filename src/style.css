@@ -20,6 +20,7 @@
     top: 30vh;
     left: 20%;
     width: 60%;
+    height: auto;
     z-index: 100;
     overflow: hidden;
     background-color: #fff;
@@ -86,6 +87,7 @@
 
 .book-data {
     width: 70%;
+    padding-top: 1rem;
 }
 
 .main-section{
@@ -115,4 +117,5 @@
 .description {
     margin: 1rem 0;
     text-align: justify;
+    line-height: 1.3rem;
 }

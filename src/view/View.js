@@ -8,8 +8,22 @@ export default class View {
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
     }
 
+    
+
     _clear(){
         this._parentElement.innerHTML = '';
     }
+
+    renderSpinner() {
+        const markup = `
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+            `;
+        this._clear();
+        this._parentElement.insertAdjacentHTML('afterbegin', markup);
+      }
 
 }
